@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Topics/Procedural Animation/ProceduralAnimation.unity
+    path: Assets/Project/Topics/Procedural Animation/ProceduralAnimation.unity
     guid: d0cb3a917daf6f54dbc37e9fcfa969f2
   m_configObjects: {}
