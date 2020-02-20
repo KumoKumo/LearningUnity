@@ -8,8 +8,9 @@ namespace ReflectionFactory
 
         public override void Process()
         {
-            GameObject.FindObjectOfType<SimplePlayer>().ChangeHealth(10, true);
-            Debug.Log("Healing 10 HP !");
+            SimplePlayer player = GameObject.FindObjectOfType<SimplePlayer>() as SimplePlayer;
+            player.ChangeHealth(10, true);
+            Debug.Log("Healing 10 HP ! The Player's HP is now " + player.Health);
         }
     }
 }

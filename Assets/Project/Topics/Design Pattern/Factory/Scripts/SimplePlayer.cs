@@ -6,6 +6,8 @@ namespace ReflectionFactory
     {
         [SerializeField] private float health = 100;
 
+        public float Health => health;
+
         internal void StartFire()
         {
             Debug.Log("Using Fire starter!");

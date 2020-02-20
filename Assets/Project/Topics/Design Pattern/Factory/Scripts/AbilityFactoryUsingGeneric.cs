@@ -18,7 +18,7 @@ namespace ReflectionFactory
     }
 
     //Fast Activator Solution
-    public static class FastActivatorOfAbilityFactoryUsingGeneric<T> where T : new()
+    public static class FastActivatorOfAbilityFactoryUsingGeneric<T> where T : Ability, new()
     {
         public static readonly Func<T> Create = DynamicModuleLambdaCompiler.GenerateFactory<T>();
     }
