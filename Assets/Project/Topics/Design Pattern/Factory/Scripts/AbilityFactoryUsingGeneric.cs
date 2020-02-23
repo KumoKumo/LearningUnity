@@ -4,10 +4,9 @@ using System.Linq.Expressions;
 namespace ReflectionFactory
 {
     /*
-     * Normal Generic Factory Implementation
-     * It is not encouraged to use this factory because of 
-     * performance and correctness issues as being described in the link below
-     * 
+     * The Generic approach doesn't work well with the Factory design concept.
+     * Client still need to know which Type to pass in so it kinda destroys the purpose of Factory.
+     * Still keep this because the post in the link below is interesting.
      * https://devblogs.microsoft.com/premier-developer/dissecting-the-new-constraint-in-c-a-perfect-example-of-a-leaky-abstraction/
      * 
      */

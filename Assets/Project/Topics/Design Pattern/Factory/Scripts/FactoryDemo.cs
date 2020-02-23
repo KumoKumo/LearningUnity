@@ -3,30 +3,33 @@ using System.Collections.Generic;
 using ReflectionFactory;
 using UnityEngine;
 
+/// <summary>
+/// This is a bad demo on how to really use the Factory
+/// </summary>
+
 public class FactoryDemo : MonoBehaviour
 {
-    private Ability ability;
-    // Update is called once per frame
+    private Ability ability01;
+    private Ability ability02;
+
+    private void Start()
+    {
+        ability01 = AbilityFactory.GetAbility("fire");
+        ability02 = AbilityFactory.GetAbility("heal");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            //ability = AbilityFactory.GetAbility("fire");
-            //AbilityFactoyUsingGeneric.GetAbility<StartFireAbility>().Process();
-            FastActivatorOfAbilityFactoryUsingGeneric<StartFireAbility>.Create().Process();
+            ability01.Process();
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            //ability = AbilityFactory.GetAbility("heal");
-            //AbilityFactoyUsingGeneric.GetAbility<HealSelfAbility>().Process();
-            FastActivatorOfAbilityFactoryUsingGeneric<HealSelfAbility>.Create().Process();
+            ability02.Process();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ability.Process();
-        }
             
     }
 }

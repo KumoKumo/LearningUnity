@@ -10,7 +10,8 @@ namespace ReflectionFactory
     {
         private static Dictionary<string, Type> abilitiesByName;
         private static bool IsInitialized => abilitiesByName != null;
-        public static void InitializeAbilityFactory()
+
+        private static void InitializeAbilityFactory()
         {
             //Not gonna do anything if not initialized already
             if (IsInitialized)
