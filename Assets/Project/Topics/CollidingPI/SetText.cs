@@ -22,7 +22,8 @@ public class SetText : MonoBehaviour
     void Update()
     {
         int count = collisionManager.Count;
-        int digits = cube.Digits - 1;
-        textMesh.text = $"Count: {count/(Mathf.Pow(10, (float)digits))}";
+        int floatingPoint = cube.Digits - 1;
+        float result = count / (Mathf.Pow(10, (float)floatingPoint));
+        textMesh.text = $"PI: {result}";
     }
 }

@@ -9,7 +9,7 @@ public class CollisionManager : MonoBehaviour
     private Cube otherCube;
     private Cube thisCube;
     private GameObject wall;
-    private float timeSteps = 5000;
+    private float timeSteps = 7000;
 
     public int Count => count;
 
