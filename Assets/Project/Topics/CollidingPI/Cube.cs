@@ -16,6 +16,7 @@ public class Cube : MonoBehaviour
     }
 
     public float Mass { get; private set; } = 100f;
+    public int Digits => digits;
 
     private void Start()
     {
