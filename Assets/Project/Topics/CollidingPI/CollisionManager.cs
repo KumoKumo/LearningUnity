@@ -9,7 +9,7 @@ public class CollisionManager : MonoBehaviour
     private Cube otherCube;
     private Cube thisCube;
     private GameObject wall;
-    private float timeSteps = 7000;
+    private float timeSteps = 2000;
 
     public int Count => count;
 
@@ -23,6 +23,10 @@ public class CollisionManager : MonoBehaviour
     {
         wall = GameObject.FindGameObjectWithTag("Wall");
         otherCube = GameObject.Find("BigCube").GetComponent<Cube>();
+        if(otherCube.Digits == 6)
+        {
+            timeSteps = 7000;
+        }
     }
 
     private void FixedUpdate()

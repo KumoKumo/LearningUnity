@@ -2,12 +2,12 @@
   <PropertyGroup>
     <MSBuildForUnityVersion>0.8.3</MSBuildForUnityVersion>
     
-    <MSBuildForUnityGeneratedOutputDirectory>D:\Personal Projects\LearningUnity\MSBuild\Projects</MSBuildForUnityGeneratedOutputDirectory>
-    <UnityProjectAssetsPath>D:\Personal Projects\LearningUnity\Assets</UnityProjectAssetsPath>
+    <MSBuildForUnityGeneratedOutputDirectory>D:\Works\Unity Projects\LearningUnity\MSBuild\Projects</MSBuildForUnityGeneratedOutputDirectory>
+    <UnityProjectAssetsPath>D:\Works\Unity Projects\LearningUnity\Assets</UnityProjectAssetsPath>
     <MSBuildForUnityDefaultOutputPath>$(UnityProjectAssetsPath)\Dependencies</MSBuildForUnityDefaultOutputPath>
     
-    <UnityCurrentPlatform>WSA</UnityCurrentPlatform>
-    <UnityCurrentTargetFramework>net46</UnityCurrentTargetFramework>
+    <UnityCurrentPlatform>WindowsStandalone64</UnityCurrentPlatform>
+    <UnityCurrentTargetFramework>netstandard2.0</UnityCurrentTargetFramework>
     
     <UnityMajorVersion>2019</UnityMajorVersion>
     <UnityMinorVersion>3</UnityMinorVersion>
