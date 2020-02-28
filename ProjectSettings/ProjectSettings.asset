@@ -137,7 +137,7 @@ PlayerSettings:
       minimumSupportedHeadTracking: 0
       maximumSupportedHeadTracking: 1
     hololens:
-      depthFormat: 1
+      depthFormat: 0
       depthBufferSharingEnabled: 1
     lumin:
       depthFormat: 0
@@ -347,7 +347,8 @@ PlayerSettings:
     - WindowsMR
   - m_BuildTarget: Windows Store Apps
     m_Enabled: 1
-    m_Devices: []
+    m_Devices:
+    - WindowsMR
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
@@ -613,7 +614,7 @@ PlayerSettings:
   metroCertificateNotAfter: 802dd90b5ff9d601
   metroApplicationDescription: Template_3D
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Hololens2Testing
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

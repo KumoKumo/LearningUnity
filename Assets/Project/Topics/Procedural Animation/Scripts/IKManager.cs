@@ -3,21 +3,15 @@ using UnityEngine;
 
 public class IKManager : MonoBehaviour
 {
-    public RobotJoint[] Joints = new RobotJoint[5];
-    public float SamplingDistance = 5.0f;
-    public float DistanceThreshold = 10.0f;
-    public float LearningRate = 5.0f;
-    public float[] jointAngles = {0,0,0,0,0};
+    public RobotJoint[] Joints;
+    public float SamplingDistance;
+    public float DistanceThreshold;
+    public float LearningRate;
+    public float[] jointAngles;
 
     private void Update()
     {
         InverseKinematics(this.gameObject.transform.position, jointAngles);
-        string log = "";
-        for(int i = 0; i < Joints.Length; i++)
-        {
-            log += jointAngles[i] + "/";
-        }
-        Debug.Log(log);
         Rotate();
     }
 
