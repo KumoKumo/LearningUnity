@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShotPool : GenericObjectPool<BlasterShotGenericPooled>
+public class ShotPool : GenericObjectPool<GenericPooledBlasterShot>
 {
     
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlasterShotGenericPooled : MonoBehaviour
+public class GenericPooledBlasterShot : MonoBehaviour
 {
     [SerializeField]
     private float moveSpeed = 30f;
