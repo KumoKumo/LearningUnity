@@ -13,7 +13,7 @@ public class RobotJoint : MonoBehaviour
 
     void Awake()
     {
-        StartOffset = transform.localPosition;
+        StartOffset = transform.localPosition / 10;
     }
 
     internal void Rotate(float angle)

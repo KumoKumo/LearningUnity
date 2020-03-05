@@ -202,6 +202,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8128389481101907838}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &569169266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569169264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820f94d57893bf843a0cd6d93313fe6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTransform: {fileID: 0}
+  scaleMinimum: 0.1
+  scaleMaximum: 5
+  relativeToInitialState: 1
 --- !u!65 &569169271 stripped
 BoxCollider:
   m_CorrespondingSourceObject: {fileID: 412393368008780564, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
@@ -235,6 +251,8 @@ GameObject:
   - component: {fileID: 1460419467}
   - component: {fileID: 1460419466}
   - component: {fileID: 1460419465}
+  - component: {fileID: 1460419470}
+  - component: {fileID: 1460419469}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -364,6 +382,30 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!114 &1460419469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460419461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cea81997dfbc04c87bddb4b8ce69d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1460419470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460419461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1511ccae7919cfc46b603b9b337fdc94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1596547093
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,32 +518,32 @@ PrefabInstance:
     - target: {fileID: 3574905885906694169, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.047912788
       objectReference: {fileID: 0}
     - target: {fileID: 3574905885906694169, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.022931237
       objectReference: {fileID: 0}
     - target: {fileID: 3574905885906694169, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.21746957
       objectReference: {fileID: 0}
     - target: {fileID: 3574905885906694169, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3574905885906694169, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3574905885906694169, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3574905885906694169, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
@@ -531,32 +573,47 @@ PrefabInstance:
     - target: {fileID: 3574905885906694169, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3574905885906694169, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3574905885906694169, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8012906675405553151, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: m_Name
       value: Robot Arm
       objectReference: {fileID: 0}
+    - target: {fileID: 8128389481636364810, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128389481636364810, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128389481636364810, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8128389481636364811, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: SamplingDistance
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8128389481636364811, guid: 7835b4cf7b55b494f9b09e4c88adea9e,
         type: 3}
       propertyPath: DistanceThreshold
-      value: 0.001
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7835b4cf7b55b494f9b09e4c88adea9e, type: 3}
