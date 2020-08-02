@@ -6,11 +6,11 @@
     <UnityProjectAssetsPath>D:\Works\Unity Projects\LearningUnity\Assets</UnityProjectAssetsPath>
     <MSBuildForUnityDefaultOutputPath>$(UnityProjectAssetsPath)\Dependencies</MSBuildForUnityDefaultOutputPath>
     
-    <UnityCurrentPlatform>WSA</UnityCurrentPlatform>
-    <UnityCurrentTargetFramework>net46</UnityCurrentTargetFramework>
+    <UnityCurrentPlatform>WindowsStandalone64</UnityCurrentPlatform>
+    <UnityCurrentTargetFramework>netstandard2.0</UnityCurrentTargetFramework>
     
-    <UnityMajorVersion>2019</UnityMajorVersion>
-    <UnityMinorVersion>3</UnityMinorVersion>
+    <UnityMajorVersion>2020</UnityMajorVersion>
+    <UnityMinorVersion>1</UnityMinorVersion>
   </PropertyGroup>
   
   <Target Name="_RemoveOutputDirectory" AfterTargets="Clean">
